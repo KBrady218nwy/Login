@@ -1,0 +1,202 @@
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-image: url(wp2700096-computer-science-engineering-wallpapers.jpg);
+    background-size: cover;
+}
+
+#myMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+#myImgOut{
+    padding: 10px;
+}
+#myImgIn{
+    width: 100px;
+    height: 100px;
+    border: 3px solid var(--primary-color);
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    animation-name: anime;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    /*box-shadow:
+        -500px -500px 0px 0px var(--primary-color),
+        500px -500px 0px 0px var(--secondary-color),
+        -500px 500px 0px 0px var(--secondary-color),
+        500px 500px 0px 0px var(--primary-color);
+*/
+}
+
+@keyframes anime{
+    0%{
+        scale: 0.8;
+    }
+    20%{
+        border-radius: 50%;
+    }
+    40%{
+        transform: rotateX(90deg);
+    }
+    60%{
+        transform: rotateY(90deg);
+    }
+    65%{
+        border-radius: 0;
+    }
+    80%{
+        scale: 1.2;
+    }
+    100%{
+        transform: rotateZ(720deg);
+    }
+}
+
+.span2{
+    color: var(--primary-color);
+    animation-name: span;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+.span1{
+    color: var(--secondary-color);
+    animation-name: span;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-timing-function: ease;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+@keyframes span{
+    0%{}
+    20%{
+    }
+    40%{
+    }
+    60%{
+    }
+    80%{
+    }
+    100%{
+    }
+}
+
+:root{
+    --primary-color: darkturquoise;
+    --secondary-color: seagreen;
+    --first-color: Black;
+    --second-color: Black;
+    --third-color: Black;
+    --fourth-color: Black;
+    --fifth-color: Black;
+    --linear-color: linear-gradient(red, blue);
+    --angle: 0deg;
+}
+
+#myInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 50px;
+
+    width: 60%;
+    height: 90%px;
+    background-color: rgba(255, 255, 255, 0.027);
+    backdrop-filter: blur(5px);
+    border: 2px outset rgba(0, 0, 0, 0.0);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.089);
+}
+
+textarea{
+    width: 80%;
+    height: 150px;
+    margin: auto;
+}
+
+button{
+    width: 30%;
+    height: 30px;
+    margin: auto;
+    border: 2px solid var(--first-color);
+    background-color: var(--primary-color);
+}
+
+button:hover{
+    border: 2px solid var(--first-color);
+    background-color: var(--primary-color);
+    border: 2px outset rgba(0, 0, 0, 0.0);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.089);
+
+}
+
+fieldset{/*
+    background-image: url(wp12085645-pc-tech-wallpapers.jpg);
+    background-size: contain;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 75%;
+    text-decoration: none;
+    animation-name: border-anime;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+@keyframes border-anime{
+    0%{
+        border: 2px solid var(--primary-color);
+    }
+    20%{
+        border-top-left-radius: 35px;
+    }
+    40%{
+        border-bottom-left-radius: 35px;
+    }
+    60%{
+        border-bottom-right-radius: 35px;
+    }
+    80%{
+        border-top-right-radius: 35px;
+    }
+    100%{
+        border: 3px solid var(--primary-color);
+    }
+}
+
+select{
+    background-color: rgba(255, 255, 255, 0.027);
+    backdrop-filter: blur(5px);
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.089);
+}
+
+input{
+    background-color: rgba(255, 255, 255, 0.027);
+    backdrop-filter: blur(1px);
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.089);
+    height: 20px;
+}
+
+b{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
